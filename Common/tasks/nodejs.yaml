@@ -12,6 +12,6 @@
     state: "present"
 
 - name: "install dependency"
-  ansible.general.npm:
+  community.general.npm:
     path: /app
   ignore_errors: true
