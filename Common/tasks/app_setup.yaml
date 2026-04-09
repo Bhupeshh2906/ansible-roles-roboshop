@@ -13,7 +13,7 @@
     comment: "roboshop system user"
 
 - name: "downloading app code file"
-  ansible.builtinget_url:
+  ansible.builtin.get_url:
     url: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip"
     dest: /tmp/{{ component }}.zip 
 
@@ -22,4 +22,4 @@
     src: /tmp/{{ component }}.zip
     dest: /app
     remote_src: yes
-    
+
