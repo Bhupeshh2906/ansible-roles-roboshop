@@ -1,4 +1,4 @@
-- name: "configure '{{ component }}'"
+- name: configure "{{ component }}"
   hosts: "localhost"
   tasks:
     role:
