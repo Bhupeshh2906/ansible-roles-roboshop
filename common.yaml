@@ -1,5 +1,4 @@
 - name: "configure {{ component }}"
   hosts: "{{ component }}"
-  tasks:
-    roles:
-    - "{{ component }}"  
+  roles:
+  - "{{ component }}"  
