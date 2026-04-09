@@ -2,4 +2,4 @@
   hosts: "localhost"
   tasks:
     role:
-     - {{ component }}
+      {{ component }}
