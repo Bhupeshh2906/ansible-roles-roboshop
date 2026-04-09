@@ -1,5 +1,7 @@
 - name: "configure {{ component }}"
   hosts: {{ host }}
+  vars_files:
+   - vault/mongo-server-pass
   tasks:
     role:
     - {{ component }}
